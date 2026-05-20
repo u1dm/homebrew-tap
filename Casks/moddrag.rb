@@ -1,6 +1,6 @@
 cask "moddrag" do
   version "0.1.2"
-  sha256 "826d87e7cd7586b6b1660c92bceaa7fa9aa47563e19a4109b200bd92c2d76fbd"
+  sha256 "dab6033e623e86f9ffec04477eb09e7bb93b7f4831ca0b6afc9c8fe1e1c6e774"
 
   url "https://github.com/u1dm/ModDrag/releases/download/v#{version}/ModDrag-#{version}.zip"
   name "ModDrag"
@@ -10,6 +10,11 @@ cask "moddrag" do
   depends_on macos: :ventura
 
   app "ModDrag.app"
+
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-dr", "com.apple.quarantine", "#{appdir}/ModDrag.app"]
+  end
 
   caveats do
     <<~EOS
