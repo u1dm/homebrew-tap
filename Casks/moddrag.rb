@@ -1,6 +1,6 @@
 cask "moddrag" do
   version "0.1.2"
-  sha256 "9295a6c5becfe4aa93c659d3cf2cbf6dd842c2e241b60c14d13cee6c9c06bc59"
+  sha256 "ae43f977d9478d10b29d8029ce8c88b9c0bfc9b281d67b5916edf8cd80e934f3"
 
   url "https://github.com/u1dm/ModDrag/releases/download/v#{version}/ModDrag-#{version}.zip"
   name "ModDrag"
