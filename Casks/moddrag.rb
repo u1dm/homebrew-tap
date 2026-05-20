@@ -12,7 +12,6 @@ cask "moddrag" do
   app "ModDrag.app"
 
   caveats do
-    requires_rosetta false
     <<~EOS
       Grant Accessibility access to ModDrag in:
         System Settings -> Privacy & Security -> Accessibility
